@@ -1,5 +1,5 @@
-resource "azurerm_public_ip" "rg-mytest__vm-mytest1-ip" {
-	 name = "vm-mytest1-ip"
+resource "azurerm_public_ip" "pip1" {
+	 name = "pip1"
 	 location = "uksouth"
 	 resource_group_name = "${var.myrg}"
 	 public_ip_address_allocation = "Dynamic" 

@@ -4,7 +4,7 @@ resource "azurerm_network_security_group" "rg-dwp-sbox-wa-dwk-core__nsg-dwp-sbox
 	 resource_group_name = "rg-dwp-sbox-wa-dwk-core"
 	 security_rule { 
 		 name = "SecurityCenter-JITRule_-838343494_2A2380183DD74A759135DB6C37DBFBD4"  
-              description = "ASC JIT Network Access rule for policy 'default' of VM 'vm-mytest1'."  
+              description = "ASC JIT Network Access rule for policy 'default' of VM '${var.myvm}'."  
 		 access = "Deny"  
 		 priority = "1000"  
 		 protocol = "*"  

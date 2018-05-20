@@ -1,1 +1,2 @@
 variable "myrg" {}
+variable "myvm" {}

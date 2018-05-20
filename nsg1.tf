@@ -1,5 +1,5 @@
-resource "azurerm_network_security_group" "rg-mytest__vm-mytest1-nsg" {
-	 name = "vm-mytest1-nsg"  
+resource "azurerm_network_security_group" "nsg1" {
+	 name = "nsg1"  
 	 location = "uksouth"
 	 resource_group_name = "${var.myrg}"
 	 security_rule { 

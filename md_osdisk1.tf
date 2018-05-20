@@ -1,5 +1,5 @@
-resource "azurerm_managed_disk" "rg-mytest__vm-mytest1_OsDisk_1_at1" {
-	 name = "vm-mytest1_OsDisk_1_at1"
+resource "azurerm_managed_disk" "osdisk1" {
+	 name = "osdisk1"
 	 location = "uksouth"
 	 resource_group_name = "${var.myrg}"
 	 disk_size_gb = "32"
