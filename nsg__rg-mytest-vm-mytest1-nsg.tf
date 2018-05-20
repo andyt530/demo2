@@ -1,7 +1,7 @@
 resource "azurerm_network_security_group" "rg-mytest__vm-mytest1-nsg" {
 	 name = "vm-mytest1-nsg"  
 	 location = "uksouth"
-	 resource_group_name = "rg-at-01"
+	 resource_group_name = "${var.myrg}"
 	 security_rule { 
 		 name = "default-allow-ssh"  
 		 access = "Allow"  

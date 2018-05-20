@@ -1,6 +1,6 @@
 resource "azurerm_network_interface" "rg-mytest__vm-mytest1353" {
 	 name = "vm-mytest1353"
-	 resource_group_name = "rg-at-01"
+	 resource_group_name = "${var.myrg}"
 	 location = "uksouth"
 	 network_security_group_id = "${azurerm_network_security_group.rg-mytest__vm-mytest1-nsg.id}"
 	 enable_ip_forwarding = "false"

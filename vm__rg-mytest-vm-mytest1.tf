@@ -1,7 +1,7 @@
 resource "azurerm_virtual_machine" "rg-mytest__vm-mytest1" {
 	 name = "vm-mytest1"
 	 location = "uksouth"
-	 resource_group_name = "rg-at-01"
+	 resource_group_name = "${var.myrg}"
 	 vm_size = "Standard_D2s_v3"
 	 network_interface_ids = ["${azurerm_network_interface.rg-mytest__vm-mytest1353.id}"]
 	 delete_data_disks_on_termination = "false"
